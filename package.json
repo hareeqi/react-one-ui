@@ -1,7 +1,7 @@
 {
   "name": "react-one-starter",
   "main": "src/index.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "native": "expo start",
     "web": "react-scripts start",
