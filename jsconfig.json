@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "react-one-ui": ["./react-one-ui"]
+      }
+    }
+  }

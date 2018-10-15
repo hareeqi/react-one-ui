@@ -1,0 +1,44 @@
+{
+  "name": "react-one-starter",
+  "main": "src/index.js",
+  "version": "0.0.0",
+  "scripts": {
+    "native": "expo start",
+    "web": "react-scripts start",
+    "web-build": "react-scripts build",
+    "web-test": "react-scripts test"
+  },
+  "peerDependencies": {
+    "expo": ">=27.0.0",
+    "react": ">=16.0.0",
+    "react-art": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "react-native": "*",
+    "react-native-web": ">=0.8.0"
+  },
+  "devDependencies": {
+    "expo": "^30.0.1",
+    "react": "16.3.1",
+    "react-art": "16.3.1",
+    "react-dom": "16.3.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-web": "0.8.11",
+    "react-navigation": "^2.15.0",
+    "react-scripts": "2.0.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "printWidth": 180,
+    "tabWidth": 4,
+    "parser": "flow",
+    "singleQuote": true
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
