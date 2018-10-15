@@ -1,5 +1,5 @@
 {
-  "name": "react-one-starter",
+  "name": "react-one-ui",
   "main": "src/index.js",
   "version": "0.0.1",
   "scripts": {
@@ -8,7 +8,7 @@
     "web-build": "react-scripts build",
     "build": "rm -rf ./dist && babel ./src/react-one-ui --out-dir dist",
     "prepublish": "npm run build",
-    "release": "np --no-cleanup"
+    "release": "np --no-cleanup && rm -rf ./dist"
   },
   "peerDependencies": {
     "expo": ">=27.0.0",
