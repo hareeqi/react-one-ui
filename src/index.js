@@ -1,4 +1,5 @@
 /* eslint-disable */
+
 const package_info = require('../package.json');
 
 if (package_info._args) {
