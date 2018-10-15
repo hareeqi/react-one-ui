@@ -1,7 +1,7 @@
 /* eslint-disable */
 const package_info = require('../package.json');
 
-if (package_info._args) {
+if (package_info._resolved) {
     try {
         module.exports = require('../dist');
     } catch (e) {}
