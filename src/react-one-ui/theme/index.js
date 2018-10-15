@@ -1,5 +1,8 @@
 import { StyleSheet } from 'react-native';
-const custome_theme = require('../../../package.json').oneTheme || {};
+let custome_theme = {};
+try {
+    custome_theme = require('../../../package.json').oneTheme || {};
+} catch (e) {}
 
 export const theme = {
     primary_color: '#3498db',

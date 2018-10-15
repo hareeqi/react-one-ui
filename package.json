@@ -6,7 +6,9 @@
     "native": "expo start",
     "web": "react-scripts start",
     "web-build": "react-scripts build",
-    "web-test": "react-scripts test"
+    "build": "rm -rf ./dist && babel ./src/react-one-ui --out-dir dist",
+    "prepublish": "npm run build",
+    "release": "np --no-cleanup"
   },
   "peerDependencies": {
     "expo": ">=27.0.0",
@@ -17,13 +19,14 @@
     "react-native-web": ">=0.8.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "expo": "^30.0.1",
+    "np": "^3.0.4",
     "react": "16.3.1",
     "react-art": "16.3.1",
     "react-dom": "16.3.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
     "react-native-web": "0.8.11",
-    "react-navigation": "^2.15.0",
     "react-scripts": "2.0.3"
   },
   "eslintConfig": {
