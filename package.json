@@ -1,7 +1,7 @@
 {
   "name": "react-one-ui",
   "main": "index.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "native": "expo start",
     "web": "react-scripts start",
