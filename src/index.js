@@ -5,7 +5,6 @@ if ((isNative && Expo.Constants.manifest.name !== 'react-one-demo') || (isWeb &&
     module.exports = require('./node_modules/react-one-ui');
 } else {
     const App = require('./demo').default;
-
     if (isWeb) {
         Dom.render(<App />, document.getElementById('root'));
         // If you want your app to work offline and load faster, you can change
