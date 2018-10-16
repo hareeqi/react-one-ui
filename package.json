@@ -1,37 +1,17 @@
 {
-  "name": "react-one-ui",
-  "main": "src/index.js",
+  "name": "react-one-demo",
+  "main": "dist",
+  "version": "0.0.9",
   "scripts": {
-    "native": "expo start",
-    "web": "react-scripts start",
-    "web-build": "react-scripts build",
     "build-dist": "rm -rf ./dist && babel ./src/libs/react-one-ui --out-dir dist",
     "release": "npm run build-dist && np --no-cleanup"
   },
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "expo": "^30.0.1",
-    "np": "^3.0.4",
-    "react": "16.3.1",
-    "react-art": "16.3.1",
-    "react-dom": "16.3.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
-    "react-native-web": "0.8.11",
-    "react-scripts": "2.0.3"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "prettier": {
-    "printWidth": 180,
-    "tabWidth": 4,
-    "parser": "flow",
-    "singleQuote": true
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "peerDependencies": {
+    "expo": ">=27.0.0",
+    "react": ">=16.0.0",
+    "react-art": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "react-native": "*",
+    "react-native-web": ">=0.8.0"
+  }
 }
