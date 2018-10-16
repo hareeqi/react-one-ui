@@ -3,8 +3,8 @@
   "main": "src/index.js",
   "scripts": {
     "native": "expo start",
-    "web": "react-scripts start",
-    "web-build": "react-scripts build",
+    "web": "REACT_APP_ONE_DEMO=true react-scripts start",
+    "web-build": "REACT_APP_ONE_DEMO=true react-scripts build",
     "release": "node release.js"
   },
   "dependencies": {
