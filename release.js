@@ -18,7 +18,7 @@ e(`mv ./package.json ./package.dev.json`);
 e(`mv ./package.release.json ./package.json`);
 
 console.log('\n\n===== building dist files');
-e(`rm -rf ./dist && ${bin_dir}babel ./src/libs/react-one-ui --out-dir dist`);
+e(`rm -rf ./dist && ${bin_dir}babel ./src/node_modules/react-one-ui --out-dir dist`);
 
 console.log('\n\n=====  patching version');
 

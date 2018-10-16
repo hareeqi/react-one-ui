@@ -1,14 +1,5 @@
 {
   "presets": ["babel-preset-expo"],
-  "plugins": [
-    [ "module-resolver",
-      {
-        "alias": {
-          "react-one-ui":"./src/libs/react-one-ui"
-        }
-      }
-    ]
-  ],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]
