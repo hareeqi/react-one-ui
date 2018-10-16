@@ -8,11 +8,11 @@ if (me !== 'react-one\n') {
     console.log('ERROR: You must log in to npm, use "npm login" command');
     process.exit(1);
 }
-const is_clean = exec('git status') + '';
-if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean')) {
-    console.log('ERROR: Make sure you are on the master branch and your git tree is clean');
-    process.exit(1);
-}
+//const is_clean = exec('git status') + '';
+//if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean')) {
+//    console.log('ERROR: Make sure you are on the master branch and your git tree is clean');
+//    process.exit(1);
+//}
 
 console.log('===== preparing release package.json');
 e(`mv ./package.json ./package.dev.json`);
@@ -30,7 +30,7 @@ try {
     console.log('=====Error occured in patching and publising');
     console.log('=====returing dev package.json');
     e(`mv ./package.json ./package.release.json`);
-    e(`mv ./package.dev.json ./package.json `);
+    //e(`mv ./package.dev.json ./package.json `);
     process.exit(1);
 }
 
