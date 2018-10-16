@@ -33,6 +33,8 @@ const runscript = async () => {
         await sleep(1000);
         e(`mv ./package.json ./package.release.json`);
         await sleep(1000);
+        console.log('=====returing dev package.json');
+
         e(`mv ./package.dev.json ./package.json `);
         process.exit(1);
     }
