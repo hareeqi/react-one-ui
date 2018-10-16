@@ -5,7 +5,12 @@ const e = c => exec(c, { shell: '/bin/bash', stdio: 'inherit' });
 
 const me = exec('npm whoami') + '';
 if (me !== 'react-one\n') {
-    console.log('You must log in to npm, use "npm login" command');
+    console.log('ERROR: You must log in to npm, use "npm login" command');
+    process.exit(1);
+}
+const is_clean = exec('git status') + '';
+if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean')) {
+    console.log('ERROR: Make sure you are on the master branch and your git tree is clean');
     process.exit(1);
 }
 
@@ -19,10 +24,10 @@ e(`rm -rf ./dist && ${bin_dir}babel ./src/libs/react-one-ui --out-dir dist`);
 console.log('===== patching version');
 
 try {
-    e(`npm version patch -F`);
-    e(`npm publish`);
-} catch (e) {
-    console.log('Error occured in patching and publising');
+    e(`npm version patch -f`);
+    //e(`npm publish`);
+} catch (a) {
+    console.log('=====Error occured in patching and publising');
     console.log('=====returing dev package.json');
     e(`mv ./package.json ./package.release.json`);
     e(`mv ./package.dev.json ./package.json `);
