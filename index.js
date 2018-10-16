@@ -1,1 +1,1 @@
-module.exports = require('./dist');
+module.exports = require('./src/libs/react-one-ui');
