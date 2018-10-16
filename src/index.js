@@ -1,5 +1,5 @@
 const React = require('react');
-const { Dom, serviceWorker } = require('./react-one-ui');
+const { Dom, serviceWorker } = require('./libs/react-one-ui');
 const App = require('./demo').default;
 
 Dom.render(<App />, document.getElementById('root'));

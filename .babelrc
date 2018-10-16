@@ -4,7 +4,7 @@
     [ "module-resolver",
       {
         "alias": {
-          "react-one-ui":"./src/react-one-ui"
+          "react-one-ui":"./src/libs/react-one-ui"
         }
       }
     ]

@@ -31,11 +31,12 @@ export const Page_Theme = () => (
     <ScrollView contentContainerStyle={{ alignItems: 'center', paddingTop: 15 }}>
         <Text>You can override the theme by introducing a variable in your "package.json" called "oneTheme"</Text>
         <Text>default themes currently defined in src/react-one-ui/theme/index.js</Text>
-        {Object.entries(theme).map(t => (
-            <Text>{`${t[0]}  =  ${t[1]}`}</Text>
+        {Object.entries(theme).map((t, i) => (
+            <Text key={i}>{`${t[0]}  =  ${t[1]}`}</Text>
         ))}
 
         <Text style={styles.m}>Also there is an alias configured for "StyleSheet.create" as "css"</Text>
         <Text style={styles.m}>{"import { css } from 'react-one-ui'"}</Text>
     </ScrollView>
 );
+/**/
