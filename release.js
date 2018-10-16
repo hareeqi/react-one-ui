@@ -43,6 +43,6 @@ console.log('\n\n===== Committing , Taggin, Pushing');
 const pkg = require('./package.release.json');
 e(`git add .`);
 e(`git commit -m'version ${pkg.version} released'`);
-e(`git tag v${pkg.version}'`);
+e(`git tag v${pkg.version}`);
 e(`git push`);
-e(`git push origin v${pkg.version}'`);
+e(`git push origin v${pkg.version}`);
