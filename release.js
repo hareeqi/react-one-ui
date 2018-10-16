@@ -7,9 +7,11 @@ if (me !== 'react-one\n') {
     console.log('\n\nERROR: You must log in to npm, use "npm login" command\n\n');
     process.exit(1);
 }
+
+e('git remote update');
 const is_clean = exec('git status') + '';
-if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean')) {
-    console.log('\n\nERROR: Make sure you are on the master branch and your git tree is clean\n\n');
+if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean') || !is_clean.includes('Your branch is up to date with')) {
+    console.log('\n\nERROR: \nMake sure you are on the master branch\nyour git tree is clean\nyou pulled the latest version\n\n');
     process.exit(1);
 }
 
