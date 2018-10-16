@@ -1,18 +1,13 @@
 {
-    "name": "react-one-demo",
-    "main": "dist",
-    "version": "0.0.8",
-    "scripts": {
-      "build-dist": "rm -rf ./dist && babel ./src/libs/react-one-ui --out-dir dist",
-      "release": "npm run build-dist && np --no-cleanup"
-    },
-    "peerDependencies": {
-      "expo": ">=27.0.0",
-      "react": ">=16.0.0",
-      "react-art": ">=16.0.0",
-      "react-dom": ">=16.0.0",
-      "react-native": "*",
-      "react-native-web": ">=0.8.0"
-    }
+  "name": "react-one-ui",
+  "main": "dist",
+  "version": "0.0.8",
+  "peerDependencies": {
+    "expo": ">=27.0.0",
+    "react": ">=16.0.0",
+    "react-art": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "react-native": "*",
+    "react-native-web": ">=0.8.0"
   }
-  
+}
