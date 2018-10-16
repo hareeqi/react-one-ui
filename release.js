@@ -25,7 +25,7 @@ const runscript = async () => {
     console.log('===== patching version');
 
     try {
-        e(`npm version patch -f`);
+        e(`npm version patch -f --no-commit-hooks`);
         //e(`npm publish`);
     } catch (a) {
         console.log('=====Error occured in patching and publising');

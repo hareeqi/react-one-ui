@@ -1,13 +1,35 @@
 {
-  "name": "react-one-ui",
-  "main": "dist",
-  "version": "0.0.10",
-  "peerDependencies": {
-    "expo": ">=27.0.0",
-    "react": ">=16.0.0",
-    "react-art": ">=16.0.0",
-    "react-dom": ">=16.0.0",
-    "react-native": "*",
-    "react-native-web": ">=0.8.0"
-  }
+  "name": "react-one-demo",
+  "main": "src/index.js",
+  "scripts": {
+    "native": "expo start",
+    "web": "react-scripts start",
+    "web-build": "react-scripts build",
+    "release": "node release.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "expo": "^30.0.1",
+    "react": "16.3.1",
+    "react-art": "16.3.1",
+    "react-dom": "16.3.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-web": "0.8.11",
+    "react-scripts": "2.0.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "printWidth": 180,
+    "tabWidth": 4,
+    "parser": "flow",
+    "singleQuote": true
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
