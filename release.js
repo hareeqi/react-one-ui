@@ -10,7 +10,7 @@ if (me !== 'react-one\n') {
 
 e('git remote update');
 const is_clean = exec('git status') + '';
-if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean') || !is_clean.includes('Your branch is up to date with')) {
+if (!is_clean.includes('On branch master') || !is_clean.includes('working tree clean') || !is_clean.includes('Your branch is up')) {
     console.log('\n\nERROR: \nMake sure you are on the master branch\nyour git tree is clean\nyou pulled the latest version\n\n');
     process.exit(1);
 }
