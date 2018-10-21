@@ -1,4 +1,5 @@
 export * from './force_rtl';
+export * from './badge';
 export * from './alert';
 export * from './button';
 export * from './link';
