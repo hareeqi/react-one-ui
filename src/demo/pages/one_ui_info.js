@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scene, Text, theme, ScrollView, css } from 'react-one-ui';
+import { Scene, Text, theme, ScrollView, css, isWeb, isNative, isIOS, isAndroid, isIphoneX } from 'react-one-ui';
 
 const styles = css({ m: { marginTop: 20 } });
 
@@ -15,8 +15,13 @@ export const Page_OneProvider = () => (
 
 export const Page_Platform = () => (
     <Scene centered>
-        <Text>react-one-ui gives you short-cut to common platform related is usages </Text>
+        <Text>react-one-ui gives you short-cut to common platform related usages </Text>
         <Text style={styles.m}>{"import { isWeb, isNative, isIOS, isAndroid, isIphoneX } from 'react-one-ui'"}</Text>
+        <Text style={styles.m}>isWeb : {isWeb + ''}</Text>
+        <Text style={styles.m}>isNative : {isNative + ''}</Text>
+        <Text style={styles.m}>isIOS : {isIOS + ''}</Text>
+        <Text style={styles.m}>isAndroid : {isAndroid + ''}</Text>
+        <Text style={styles.m}>isIphoneX Device : {isIphoneX + ''}</Text>
     </Scene>
 );
 
