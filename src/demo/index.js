@@ -6,11 +6,10 @@ import { Link, theme, css, OneProvider, ScrollView, View, Text } from 'react-one
 const styles = css({
     header: {
         flexDirection: 'row',
-        height: 60,
+        height: 80,
         backgroundColor: theme.light_gray_color,
         alignItems: 'flex-end',
-        justifyContent: 'center',
-        padding: 15
+        justifyContent: 'center'
     },
     item: {
         flex: 1,
@@ -27,8 +26,8 @@ class DemoApp extends Component {
 
     _renderHeader = () => (
         <View style={styles.header}>
-            <Text>{this.state.page || 'Components & API'}</Text>
-            {this.state.page ? <Link title=" - Clear - " onPress={() => this.setState({ page: '' })} /> : null}
+            <Text style={{ paddingVertical: 10 }}>{this.state.page || 'Components & API'}</Text>
+            {this.state.page ? <Link style={{ paddingVertical: 10 }} title=" - Clear - " onPress={() => this.setState({ page: '' })} /> : null}
         </View>
     );
     _renderList = () => {

@@ -3,4 +3,6 @@ node_modules/**/*
 npm-debug.*
 .vscode/*
 .DS_Store
+ios
+android
 dist
